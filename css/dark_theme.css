@@ -1,0 +1,11 @@
+html {
+    --primary_color: #009C27;
+    --on_primary_color: #FFFFFF;
+    --background_color: #202020;
+    --on_background_color: #EAEAEA;
+    --surface_color: #151515;
+    --on_surface_color: #B5B4B4;
+    --logo_color: #FFFFFF;
+    --footer_icon_color: #EAEAEA;
+    /* --footer_color: #323232; */
+}
