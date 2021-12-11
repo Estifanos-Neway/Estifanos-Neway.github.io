@@ -45,10 +45,11 @@ header {
     height: 50px;
     z-index: 100;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.5s;
 }
 
 #headerLogo {
-    font-size: 25px;
+    font-size: 30px;
     color: var(--logo_color);
     text-align: center;
     flex-basis: 15%;
@@ -69,12 +70,14 @@ header {
 
 }
 
-#change-theme {
+#header__change-theme-con {
+    flex-grow: 1;
+    text-align: center;
+}
+#header__change-theme-con__icon {
     color: var(--logo_color);
     font-size: 30px;
-    flex-grow: 1;
     cursor: pointer;
-    text-align: center;
 }
 
 /* footer */
@@ -96,7 +99,7 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
-#footer_icon-con{
+#footer__icon-con{
     flex-basis: 33%;
     display: flex;
     align-items: center;
@@ -105,7 +108,7 @@ footer{
     font-size: 40px;
     color: var(--primary_color);
 }
-#footer_copyright{
+#footer__copyright{
     color: var(--on_surface_color);
     font-weight:normal;
     font-size: 12px;

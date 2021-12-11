@@ -1,11 +1,12 @@
 html {
     --primary_color: #005C1F;
     --on_primary_color: #FFFFFF;
-    --background_color: #FFFFFF;
+    --background_color: #EAEAEA;
     --on_background_color: #000000;
-    --surface_color: #EAEAEA;
+    --surface_color: #FFFFFF;
     --on_surface_color: #626262;
     --logo_color: #000000;
     --footer_icon_color: #626262;
+    --headline_color: #000000;
     /* --footer_color: #323232; */
 }

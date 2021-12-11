@@ -1,5 +1,5 @@
 main{
-    padding-top: 85px;
+    padding-top: 85px; 
 }
 #about_header{
     text-align: center;
@@ -33,6 +33,7 @@ main{
 }
 #about_short-details__table{
     background-color: var(--surface_color);
+    color: var(--on_surface_color);
     padding: 10px;
     font-size: 15px;
     border-radius: 7px;
@@ -40,6 +41,7 @@ main{
 }
 .about_short-details__table__row_th{
     padding: 5px;
+    color: var(--headline_color);
 }
 #about_long-details{
     display: flex;
@@ -50,6 +52,7 @@ main{
 .about_long-details__detail{
     margin: 20px;
     background-color: var(--surface_color);
+    color: var(--on_surface_color);
     padding: 15px;
     width: 400px;
     border-radius: 7px;
@@ -57,4 +60,7 @@ main{
 }
 .about_long-details__detail__text{
     font-size: 14px;
+}
+.about_long-details__detail__header{
+    color: var(--headline_color);
 }
