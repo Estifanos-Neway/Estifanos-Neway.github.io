@@ -1,0 +1,66 @@
+main {
+    padding-top: 85px;
+}
+
+#contact__main-con {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+#contact__links-con {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface_color);
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 35px;
+    /* flex-basis: 30%; */
+}
+
+.contact__links-con__link {
+    display: flex;
+    padding: 10px;
+}
+
+.contact__links-con__link__icon {
+    margin-right: 10px;
+    font-size: xx-large;
+}
+
+.contact__links-con__link__text {
+    font-size: x-large;
+}
+
+#contact__message-con {
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 70%; */
+}
+
+#contact__message-con__textarea {
+    background-color: var(--textarea_background_color);
+    resize: none;
+    border: none;
+    font-size: x-large;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#contact__message-con__btn {
+    width: 100px;
+    background-color: var(--primary_color);
+    color: var(--on_primary_color);
+    padding: 6px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}

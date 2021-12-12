@@ -8,5 +8,6 @@ html {
     --logo_color: #000000;
     --footer_icon_color: #626262;
     --headline_color: #000000;
-    /* --footer_color: #323232; */
+    --textarea_background_color: #FFFFFF;
+    --comment_textarea_background_color: #e6e4e4;
 }

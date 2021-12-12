@@ -6,12 +6,12 @@ main{
     margin-bottom: 25px;
     padding: 0 150px;
 }
-#services__con{
+#services__main-con{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.services__service{
+.services__main-con__service{
     margin: 30px 0;
     padding: 20px 0;
     border-radius: 7px;
@@ -24,27 +24,27 @@ main{
     flex-wrap: wrap;
     width: 80vw;
 }
-.services__service__text-con__header{
+.services__main-con__service__text-con__header{
     color: var(--headline_color);
 }
-.services__service__image-con__image{
+.services__main-con__service__image-con__image{
     height: 200px;
     flex-basis: 40%;
     display: flex;
     flex-grow: 1;
 }
-.services__service__text-con{
+.services__main-con__service__text-con{
     flex-basis: 60%;
 }
-.services__service__text-con__header{
+.services__main-con__service__text-con__header{
     margin-bottom: 3px;
 }
-.services__service__text-con__p{
+.services__main-con__service__text-con__p{
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-.services__service__text-con__btn{
+.services__main-con__service__text-con__btn{
     width: 130px;
     background-color: var(--primary_color);
     color: var(--on_primary_color);

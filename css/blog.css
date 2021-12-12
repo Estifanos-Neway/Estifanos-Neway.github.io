@@ -1,0 +1,101 @@
+main {
+    padding-top: 85px;
+}
+
+#blogs__header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 0 150px;
+}
+
+#blogs__main-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs__main-con__blog {
+    margin: 30px 0;
+    padding: 20px 0;
+    border-radius: 7px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    background-color: var(--surface_color);
+    color: var(--on_surface_color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+
+.blogs__main-con__blog__text-con__header {
+    color: var(--headline_color);
+}
+
+.blogs__main-con__blog__image-con__image {
+    height: 200px;
+    flex-basis: 40%;
+    display: flex;
+    flex-grow: 1;
+}
+
+.blogs__main-con__blog__text-con {
+    flex-basis: 60%;
+}
+
+.blogs__main-con__blog__text-con__header {
+    margin-bottom: 3px;
+}
+
+.blogs__main-con__blog__text-con__p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blogs__main-con__blog__text-con__p__more {
+    color: var(--primary_color);
+    cursor: pointer;
+}
+
+.blogs__main-con__blog__text-con__comment-con {
+    display: flex;
+    background-color: var(--comment_textarea_background_color);
+    border-radius: 25px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.blogs__main-con__blog__text-con__comment-con__textarea {
+    background-color: var(--comment_textarea_background_color);
+    resize: none;
+    border: none;
+    font-size: large;
+    padding: 5px 15px;
+    outline: none;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.blogs__main-con__blog__text-con__comment-con__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    background-color: var(--primary_color);
+    color: var(--on_primary_color);
+    padding: 6px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blogs__main-con__blog__text-con__comment-con__info{
+    text-align: right;
+    color: var(--headline_color);
+    font-size: large;
+}
