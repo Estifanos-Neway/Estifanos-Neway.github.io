@@ -63,7 +63,7 @@ function setTheme(theme_path) {
 }
 
 function decorHeader() {
-    get(`header-navs__${PAGE_NAME}`).style.color = "var(--primary_color)";
+    get(`header__navs__${PAGE_NAME}`).style.color = "var(--primary_color)";
 }
 
 function changeTheme(event) {
@@ -81,11 +81,12 @@ async function fillCommons() {
     //filling the footer
     await fetch(FOOTER_PATH)
         .then(res => res.text())
-        .then(text => get("footer").innerHTML = text);
+        .then(text => get("footer").innerHTML = text)
+        .catch(()=>{});
 
     // setting properties of the header
     decorHeader();
-    get("header__change-theme-con__icon").onclick = changeTheme;
+    get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
 }
 
 function setStyles(){
