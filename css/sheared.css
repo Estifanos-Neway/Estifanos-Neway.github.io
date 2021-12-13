@@ -4,6 +4,7 @@
 /* sheared variables */
 html {
     --header_height: 50px;
+    --footer_height:200px;
 }
 
 /* default styles */
@@ -30,13 +31,12 @@ textarea {
 
 /* common styles */
 main {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--footer_height));
 }
 
 .page-header {
     text-align: center;
-    margin-bottom: 25px;
-    padding: 0 150px;
+    padding: 0 15px;
 }
 
 ::-webkit-scrollbar {
@@ -55,7 +55,7 @@ header {
     position: fixed;
     width: 100vw;
     display: flex;
-    /* background-color: var(--surface_color); */
+    background-color: var(--surface_color);
     align-items: center;
     height: var(--header_height);
     z-index: 100;
@@ -108,7 +108,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: var(--footer_height);
     background-color: var(--surface_color);
 }
 

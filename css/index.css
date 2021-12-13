@@ -8,6 +8,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 45% 5% 45% 5%;
+    grid-template-rows: var(--header_height) auto ;
     align-items: center;
 }
 
@@ -25,6 +26,7 @@ main {
     border-bottom-right-radius: 500px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     grid-column: 1/2;
+    grid-row: 2/-1;
     justify-self: end;
 }
 
@@ -35,6 +37,7 @@ main {
     /*  */
     color: var(--on_background_color);
     grid-column: 3/4;
+    grid-row: 2/-1;
     padding-bottom: 25px;
 }
 
@@ -121,7 +124,6 @@ main {
         grid-row: 3/-1;
         padding: 0 5vw;
         text-align: center;
-        /* background-color: gray; */
     }
     #landing__text-con__header-underline{
         width: 20vw;

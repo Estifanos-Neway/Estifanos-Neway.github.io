@@ -2,12 +2,6 @@ main {
     padding-top: 85px;
 }
 
-#blogs__header {
-    text-align: center;
-    margin-bottom: 25px;
-    padding: 0 150px;
-}
-
 #blogs__main-con {
     display: flex;
     flex-direction: column;
@@ -28,15 +22,9 @@ main {
     width: 80vw;
 }
 
-.blogs__main-con__blog__text-con__header {
-    color: var(--headline_color);
-}
-
 .blogs__main-con__blog__image-con__image {
     height: 200px;
     flex-basis: 40%;
-    display: flex;
-    flex-grow: 1;
 }
 
 .blogs__main-con__blog__text-con {
@@ -45,6 +33,7 @@ main {
 
 .blogs__main-con__blog__text-con__header {
     margin-bottom: 3px;
+    color: var(--headline_color);
 }
 
 .blogs__main-con__blog__text-con__p {
@@ -94,8 +83,60 @@ main {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.blogs__main-con__blog__text-con__comment-con__info{
+.blogs__main-con__blog__text-con__comment-con__info {
     text-align: right;
     color: var(--headline_color);
     font-size: large;
+}
+
+@media screen and (max-width: 750px) {
+
+    .blogs__main-con__blog {
+        width: 88vw;
+        /*  */
+    }
+
+    .blogs__main-con__blog__image-con {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blogs__main-con__blog__text-con {
+        /*  */
+        flex-grow: 1;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogs__main-con__blog__text-con__header {
+        /*  */
+        text-align: center;
+    }
+
+    .blogs__main-con__blog__text-con__p {
+        /*  */
+        text-align: justify;
+    }
+
+    .blogs__main-con__blog__text-con__comment-con {
+        /*  */
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .blogs__main-con__blog__text-con__comment-con__textarea {
+        flex-grow: 1;
+        overflow: hidden;
+        /*  */
+    }
+
+    .blogs__main-con__blog__text-con__comment-con__info {
+        text-align: right;
+        color: var(--headline_color);
+        width: 100%;
+        font-size: large;
+    }
 }
