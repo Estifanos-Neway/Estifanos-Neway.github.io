@@ -41,9 +41,35 @@ main {
     margin-bottom: 20px;
 }
 
-.blogs__main-con__blog__text-con__p__more {
+.blogs__main-con__blog__text-con__p__more-less {
     color: var(--primary_color);
     cursor: pointer;
+}
+.blogs__main-con__blog__text-con__p__detail--hide{
+    display: none;
+}
+.blogs__main-con__blog__text-con__p__cut:checked+span .blogs__main-con__blog__text-con__p__detail {
+    display: none;
+}
+
+.blogs__main-con__blog__text-con__p__cut:checked+span label::after {
+    content: "  more";
+}
+
+.blogs__main-con__blog__text-con__p__cut:checked+span label span {
+    display: none;
+}
+
+.blogs__main-con__blog__text-con__p__add:checked+span .blogs__main-con__blog__text-con__p__detail--hide {
+    display: inline;
+}
+
+.blogs__main-con__blog__text-con__p__add:checked+span label::after {
+    content: "less";
+}
+
+.blogs__main-con__blog__text-con__p__add:checked+span label span {
+    display: none;
 }
 
 .blogs__main-con__blog__text-con__comment-con {

@@ -14,15 +14,14 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-.contact__links-con__link {
+.contact__links-con__link{
     display: flex;
     padding: 10px 15px;
-    margin: 15px 10px;
     background-color: var(--surface_color);
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     align-items: center;
+    margin: 15px 10px;
 }
 
 .contact__links-con__link__icon {
@@ -55,7 +54,6 @@ main {
     margin-bottom: 20px;  
     margin-top: 15px;
 }
-
 #contact__message-con__btn {
     width: 100px;
     background-color: var(--primary_color);
@@ -65,14 +63,13 @@ main {
     font-size: 15px;
     border-radius: 25px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    display: block;
 }
 @media screen and (max-width: 750px){
     #contact__links-con {
         width: 98vw;
     }
-    .contact__links-con__link {
-        margin: 15px 10px;
-    }
+
     #contact__message-con {
         width: 80vw;
     }

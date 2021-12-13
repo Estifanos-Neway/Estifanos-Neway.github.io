@@ -40,8 +40,8 @@ main {
     font-size: 16px;
     margin-bottom: 20px;
 }
-
 .works__main-con__work__text-con__btn, .services__main-con__service__text-con__btn {
+    display: block;
     width: 130px;
     background-color: var(--primary_color);
     color: var(--on_primary_color);
@@ -83,7 +83,6 @@ main {
         /*  */
         text-align: justify;
     }
-
     .works__main-con__work__text-con__btn, .services__main-con__service__text-con__btn {
         width: 100%;
         max-width: 300px;

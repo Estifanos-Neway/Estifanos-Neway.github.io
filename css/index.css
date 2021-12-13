@@ -2,7 +2,7 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 45% 5% 45% 5%;
-    grid-template-rows: var(--header_height) auto ;
+    grid-template-rows: var(--header_height) auto;
     align-items: center;
 }
 
@@ -24,13 +24,14 @@ main {
     padding-bottom: 25px;
 }
 
-#landing__text-con__header-underline{
+#landing__text-con__header-underline {
     height: 2px;
     width: 5vw;
     margin-bottom: 5px;
     background-color: var(--primary_color);
     border-radius: 10px;
 }
+
 #landing__text-con_text-header {
     font-weight: bold;
     font-size: 50px;
@@ -42,7 +43,8 @@ main {
     margin-bottom: 25px;
 }
 
-#landing__text-con_btn {
+#landing__text-con__btn {
+    display: block;
     width: 130px;
     background-color: var(--primary_color);
     color: var(--on_primary_color);
@@ -79,28 +81,42 @@ main {
         grid-column: unset;
         padding-bottom: unset;
         /*  */
+        display: flex;
+        flex-direction: column;
         grid-row: 3/-1;
         padding: 0 5vw;
         text-align: center;
     }
-    #landing__text-con__header-underline{
+
+    #landing__text-con__header-underline {
         width: 20vw;
         /*  */
         margin: 0 40%;
         margin-bottom: 5px;
     }
+
     #landing__text-con_text-header {
         font-size: 33px;
         /*  */
     }
 
     #landing__text-con_text-description {
-        font-size: 23px;
+        font-size: 25px;
+        max-width: 450px;
         /*  */
     }
 
-    #landing__text-con_btn {
+    #landing__text-con__btn-a {
         width: 100%;
+        max-width: 300px;
+        align-self: center;
+        /*  */
+    }
+
+    #landing__text-con__btn {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
         padding: 10px 0;
         font-size: 15px;
         /*  */

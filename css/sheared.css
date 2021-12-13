@@ -131,7 +131,9 @@ footer {
     font-size: 40px;
     color: var(--primary_color);
 }
-
+.footer__icon-con__a{
+    display: block;
+}
 #footer__copyright {
     color: var(--on_surface_color);
     font-weight: normal;
@@ -142,6 +144,7 @@ footer {
 #footer__copyright__text {
     transform: translateY(20px);
     text-align: center;
+    margin-top: 20px;
 }
 
 /* for screen width < 750 */
@@ -236,7 +239,7 @@ footer {
         justify-content: center;
     }
 
-    .footer__icon-con__icon {
+    .footer__icon-con__a {
         margin: 0 10px;
     }
 }
