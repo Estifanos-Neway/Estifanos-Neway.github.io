@@ -4,7 +4,7 @@
 /* sheared variables */
 html {
     --header_height: 50px;
-    --footer_height:200px;
+    --footer_height: 200px;
 }
 
 /* default styles */
@@ -27,6 +27,16 @@ html {
 
 textarea {
     font-family: 'Quicksand', sans-serif;
+}
+
+.btn {
+    background-color: var(--primary_color);
+    color: var(--on_primary_color);
+    border-radius: 25px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 /* common styles */
@@ -97,8 +107,13 @@ header {
     cursor: pointer;
 }
 
-#header__right-icons-con__menu-icon {
+#header__right-icons-con__menu {
     display: none;
+    font-size: 0;
+}
+
+#header__right-icons-con__menu__icon {
+    font-size: 30px;
 }
 
 /* footer */
@@ -128,12 +143,18 @@ footer {
     align-items: center;
     width: 400px;
     justify-content: space-between;
-    font-size: 40px;
-    color: var(--primary_color);
+    color: var(--primary_color-on-surface);
 }
-.footer__icon-con__a{
+
+.footer__icon-con__a {
     display: block;
+    font-size: 0;
 }
+
+.footer__icon-con__a__icon {
+    font-size: 40px;
+}
+
 #footer__copyright {
     color: var(--on_surface_color);
     font-weight: normal;
@@ -194,11 +215,15 @@ footer {
         justify-self: right;
     }
 
-    #header__right-icons-con__menu-icon {
+    #header__right-icons-con__menu {
         display: unset;
         /*  */
-        font-size: 28px;
+        font-size: 0;
         margin: 0 17px;
+    }
+
+    #header__right-icons-con__menu__icon {
+        font-size: 28px;
     }
 
     #header__navs {

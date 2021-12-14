@@ -23,10 +23,12 @@ main {
     align-items: center;
     margin: 15px 10px;
 }
-
-.contact__links-con__link__icon {
+.contact__links-con__link__a{
+    font-size: 0;
+}
+.contact__links-con__link__icon, .contact__links-con__link__a__icon {
     color: var(--primary_color);
-    margin-right: 10px;
+    margin: 0 10px;
     font-size: xx-large;
 }
 
@@ -56,14 +58,10 @@ main {
 }
 #contact__message-con__btn {
     width: 100px;
-    background-color: var(--primary_color);
-    color: var(--on_primary_color);
     padding: 6px;
-    text-align: center;
     font-size: 15px;
-    border-radius: 25px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     display: block;
+    border: none;
 }
 @media screen and (max-width: 750px){
     #contact__links-con {

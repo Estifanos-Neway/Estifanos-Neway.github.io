@@ -43,13 +43,8 @@ main {
 .works__main-con__work__text-con__btn, .services__main-con__service__text-con__btn {
     display: block;
     width: 130px;
-    background-color: var(--primary_color);
-    color: var(--on_primary_color);
     padding: 6px;
-    text-align: center;
     font-size: 15px;
-    border-radius: 25px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 750px) {
