@@ -39,7 +39,7 @@ main {
 }
 
 #landing__text-con_text-description {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 25px;
 }
 
@@ -52,7 +52,7 @@ main {
 @media screen and (max-width: 750px) {
 
     main {
-        --photo_height: 250px;
+        --photo_height: 200px;
         grid-template-columns: unset;
         align-items: unset;
         /*  */
@@ -89,12 +89,12 @@ main {
     }
 
     #landing__text-con_text-header {
-        font-size: 33px;
+        font-size: 30px;
         /*  */
     }
 
     #landing__text-con_text-description {
-        font-size: 30px;
+        font-size: 25px;
         max-width: 450px;
         /*  */
     }

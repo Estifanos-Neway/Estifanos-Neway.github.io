@@ -32,19 +32,18 @@ main {
 }
 
 .works__main-con__work__text-con__header, .services__main-con__service__text-con__header {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     color: var(--headline_color);
 }
 
-.works__main-con__work__text-con__header__sep {
-    color: var(--primary_color);
-}
 
 .works__main-con__work__text-con__p, .services__main-con__service__text-con__p {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 15px;
 }
-
+.services__main-con__service__text-con__p_list{
+    padding-left: 15px;
+}
 .works__main-con__work__text-con__btn, .services__main-con__service__text-con__btn {
     display: block;
     width: 130px;
@@ -59,9 +58,6 @@ main {
     margin-bottom: 20px;
 }
 
-.works__main-con__work__text-con__comment-con__info__sep {
-    color: var(--primary_color-on-surface);
-}
 
 @media screen and (max-width: 750px) {
 
