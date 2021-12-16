@@ -62,14 +62,20 @@ function setTheme(theme_path) {
         .then(text => get("theme").innerHTML = text);
 }
 
-function decorHeader() {
-    get(`header__navs__${PAGE_NAME}`).style.color = "var(--primary_color-on-surface)";
-}
 
 function changeTheme(event) {
     currentTheme = currentTheme=="light"?"dark":"light";
     setTheme(THEMES[currentTheme]);
     document.cookie = "theme=" + currentTheme + ";expires=" + cookiesExpireAt + ";path=/";
+}
+
+function decorHeader() {
+    get(`header__navs__${PAGE_NAME}`).style.color = "var(--primary_color-on-surface)";
+}
+
+function setCopyrightDate(){
+    let now = new Date();
+    get("footer__copyright__date").innerHTML = now.getFullYear();
 }
 
 async function fillCommons() {
@@ -87,10 +93,9 @@ async function fillCommons() {
     // setting properties of the header
     decorHeader();
     get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
-}
 
-function setStyles(){
-    get("landing").style.height = `${window.screen.height - window.screen.height*0.13}px`;
+    // setting properties of the footer
+    setCopyrightDate();
 }
 
 //statements

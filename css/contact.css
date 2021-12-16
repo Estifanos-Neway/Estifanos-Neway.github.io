@@ -55,6 +55,7 @@ main {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;  
     margin-top: 15px;
+    height: 240px;
 }
 #contact__message-con__btn {
     width: 100px;
@@ -69,6 +70,10 @@ main {
     }
 
     #contact__message-con {
-        width: 80vw;
+        width: 90vw;
+    }
+    #contact__message-con__textarea {
+        height: 140px;
+        /*  */
     }
 }

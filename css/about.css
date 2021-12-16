@@ -38,6 +38,7 @@ main {
 .about_short-details__con__table__row_th {
     padding: 5px;
     color: var(--headline_color);
+    text-align: right;
 }
 #about_long-details {
     display: flex;

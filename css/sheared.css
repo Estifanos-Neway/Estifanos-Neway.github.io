@@ -57,7 +57,6 @@ main {
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary_color);
 }
-
 /* header */
 header {
     font-family: 'Ubuntu', sans-serif;

@@ -155,9 +155,8 @@ main {
     }
 
     .blogs__main-con__blog__text-con__comment-con__info {
-        text-align: right;
-        color: var(--headline_color);
         width: 100%;
         font-size: large;
+        /*  */
     }
 }
