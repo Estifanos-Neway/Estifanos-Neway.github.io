@@ -15,6 +15,7 @@ main {
     grid-column: 1/2;
     grid-row: 2/-1;
     justify-self: end;
+    content: url("../images/photo_large.jpg");
 }
 
 #landing__text-con {
@@ -68,6 +69,7 @@ main {
         /*  */
         height: var(--photo_height);
         grid-row: 2/3;
+        content: url("../images/photo_small.jpg");
     }
 
     #landing__text-con {

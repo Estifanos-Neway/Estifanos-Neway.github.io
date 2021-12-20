@@ -33,7 +33,7 @@ main {
 }
 
 .blogs__main-con__blog__text-con__header {
-    margin-bottom: 3px;
+    margin-bottom: 10px;
     color: var(--headline_color);
 }
 
@@ -122,6 +122,7 @@ main {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 30px;
     }
 
     .blogs__main-con__blog__text-con {
@@ -141,6 +142,7 @@ main {
     .blogs__main-con__blog__text-con__p {
         /*  */
         text-align: justify;
+        padding: 0 10px;
     }
 
     .blogs__main-con__blog__text-con__comment-con {
