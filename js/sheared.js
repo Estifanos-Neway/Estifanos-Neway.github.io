@@ -92,7 +92,7 @@ async function fillCommons() {
 
     // setting properties of the header
     decorHeader();
-    // get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
+    get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
 
     // setting properties of the footer
     setCopyrightDate();

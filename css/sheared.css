@@ -85,7 +85,7 @@ header {
 
 #header__navs {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     flex-basis: 73%;
 }
