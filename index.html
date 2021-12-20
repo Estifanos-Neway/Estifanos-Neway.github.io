@@ -2,46 +2,58 @@
 <html lang="en">
 
 <head>
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STIV</title>
-    <style>
-        html {
-            background-color: red;
-        }
-
-        @media screen and (max-width: 700px) {
-            html {
-                background-color: black;
-            }
-        }
-
-        @media screen and (max-width: 900px) {
-            html {
-                background-color: gray;
-            }
-        }
-
-        @media screen and (max-width: 1100px) {
-            html {
-                background-color: green;
-            }
-        }
-        @media screen and (max-width: 1300px) {
-            html {
-                background-color: yellow;
-            }
-        }
-        @media screen and (max-width: 1500px) {
-            html {
-                background-color: yellow;
-            }
-        }
+  
+    <!-- Styles -->
+    <style id="theme">
+        /* this will be filled by JS as needed */
     </style>
+    <link href="./css/sheared.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./images/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <title>STIV | Home</title>
+
 </head>
 
 <body>
-    Here we go. <p style="font-size:20px;">yes we do</p>
+    <header id="header">
+        <!-- this will be filled by JS on the fly -->
+    </header>
+    <!-- main body -->
+    <main id="landing">
+        <img id="landing__photo" alt="Large Photo of Mine">
+        <div id="landing__text-con">
+            <h1 id="landing__text-con_text-header">
+                Hey, I am Estifanos
+            </h1>
+            <div id="landing__text-con__header-underline"></div>
+            <p id="landing__text-con_text-description">
+                A software and web developer, based in Addis Ababa, Ethiopia. Student of AAiT and experienced Backend
+                Developer.
+            </p>
+            <a href="../about.html" id="landing__text-con__btn" class=" btn">
+                <p id="landing__text-con__btn__text">
+                    Know More
+                </p>
+            </a>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <!-- this will be filled by JS on the fly -->
+    </footer>
 </body>
+
+<!-- scripts -->
+<script>const PAGE_NAME = "home";</script>
+<script src="./js/sheared.js"></script>
+<script src="./js/iconify.js"></script>
 
 </html>

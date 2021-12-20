@@ -1,0 +1,14 @@
+html {
+    --primary_color: #008521;
+    --primary_color-on-surface: #009C27;
+    --on_primary_color: #FFFFFF;
+    --background_color: #202020;
+    --on_background_color: #EAEAEA;
+    --surface_color: #151515;
+    --on_surface_color: #B5B4B4;
+    --logo_color: var(--on_primary_color);
+    --icon_color: var(--on_background_color);
+    --headline_color: var(--on_primary_color);
+    --textarea_background_color: #cacaca;
+    --comment_textarea_background_color: var(--textarea_background_color);
+}

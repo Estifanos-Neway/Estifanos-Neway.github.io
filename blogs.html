@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <style id="theme">
+        /* this will be filled by JS as needed */
+    </style>
+    <link href="./css/sheared.css" rel="stylesheet">
+    <link href="./css/blogs.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./images/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <title>STIV | Blog</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- this will be filled by JS as needed -->
+    </header>
+    <!-- main body -->
+    <main id="blogs">
+        <h1 id="blogs__header" class="page-header">
+            This is a private blog and announcement page
+        </h1>
+        <div id="blogs__main-con">
+            <div class="blogs__main-con__blog">
+                <div class="blogs__main-con__blog__image-con">
+                    <img class="blogs__main-con__blog__image-con__image" src="./images/blog.jpg" alt="a website">
+                </div>
+                <div class="blogs__main-con__blog__text-con">
+                    <h2 class="blogs__main-con__blog__text-con__header">
+                        A "Blog" page, really?
+                    </h2>
+                    <p class="blogs__main-con__blog__text-con__p">
+                        <input hidden id="blogs__main-con__blog2__text-con__p__resizer"
+                            class="blogs__main-con__blog__text-con__p__add" type="checkbox">
+                        This is a short blog to say some words about how this blog page is included in this site. Well,
+                        this website was made as a submission for an assignment given in the <span><span
+                                class="blogs__main-con__blog__text-con__p__detail--hide">course "Web Design and
+                                Programing". In fact, I was thinking about developing my personal website a while before
+                                the assignment, but I had no interest in having a blog page in it. Of course you may ask
+                                "so why is it here?" That is simply because the course instructor wanted me to have "6
+                                pages" in my site. So I search around about what pages shall be included in a personal
+                                site, and I got the idea of having a blog page. I can't say I totally hate the idea but
+                                I still don't have the intention of keeping this page in my site. So if I haven't
+                                changed my mind by then , I will remove the page after the course is completed.
+                                Bye.</span>
+
+                            <label for="blogs__main-con__blog2__text-con__p__resizer"
+                                class="blogs__main-con__blog__text-con__p__more-less">
+                                <span>
+                                    <span class="blogs__main-con__blog__text-con__p__more-less__dots">. . . </span>more
+                                </span>
+                            </label>
+                        </span>
+                    </p>
+                    <form action="./blogs.html" method="get" class="blogs__main-con__blog__text-con__comment-con">
+                        <label hidden for="blogs__main-con__blog2__text-con__comment-con__textarea">comment area</label>
+                        <textarea name="comment-blog_id2" placeholder="any comment?"
+                            id="blogs__main-con__blog2__text-con__comment-con__textarea"
+                            class="blogs__main-con__blog__text-con__comment-con__textarea" rows="2"></textarea>
+                        <button type="submit"
+                            class="blogs__main-con__blog__text-con__comment-con__btn btn">send</button>
+                    </form>
+                    <p class="blogs__main-con__blog__text-con__comment-con__info">
+                        A/A, Ethiopia <span class="sep">|</span> Monday, December 20, 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <!-- this will be filled by JS as needed -->
+    </footer>
+</body>
+
+<!-- scripts -->
+<script>const PAGE_NAME = "blogs";</script>
+<script src="./js/sheared.js"></script>
+<script src="./js/iconify.js"></script>
+
+</html>
