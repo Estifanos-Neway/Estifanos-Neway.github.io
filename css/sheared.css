@@ -11,6 +11,7 @@ html {
 * {
     margin: 0;
     padding: 0;
+    max-width: 100vw;
 }
 
 a {
@@ -94,6 +95,9 @@ header {
     text-align: center;
     color: var(--on_surface_color);
     margin: 0 9px;
+}
+.header__navs__nav:hover{
+    color: var(--primary_color-on-surface);
 }
 
 #header__right-icons-con {

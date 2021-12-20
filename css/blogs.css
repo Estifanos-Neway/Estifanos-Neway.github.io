@@ -25,6 +25,7 @@ main {
 .blogs__main-con__blog__image-con__image {
     height: 200px;
     flex-basis: 40%;
+    border-radius: 10px;
 }
 
 .blogs__main-con__blog__text-con {
@@ -44,6 +45,9 @@ main {
 .blogs__main-con__blog__text-con__p__more-less {
     color: var(--primary_color-on-surface);
     cursor: pointer;
+}
+.blogs__main-con__blog__text-con__p__more-less__dots{
+    color: var(--on_surface_color);
 }
 .blogs__main-con__blog__text-con__p__detail--hide{
     display: none;
@@ -75,9 +79,7 @@ main {
 .blogs__main-con__blog__text-con__comment-con {
     display: flex;
     background-color: var(--comment_textarea_background_color);
-    border-radius: 25px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+    border-radius: 15px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     justify-content: space-between;
@@ -95,13 +97,12 @@ main {
     overflow: hidden;
 }
 .blogs__main-con__blog__text-con__comment-con__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
+    width: 80px;
     padding: 6px;
     font-size: 17px;
     border: none;
+    border-radius: 0px;
+    border-top-right-radius: 0;
 }
 
 .blogs__main-con__blog__text-con__comment-con__info {

@@ -5,52 +5,11 @@ main {
 #about__main-content {
     display: flex;
     margin-top: 25px;
-}
-
-#about_short-details {
-    flex-basis: 35%;
-}
-
-#about_short-details__con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1vw;
-}
-
-#about_short-details__con__image {
-    margin-bottom: 20px;
-    height: 120px;
-    width: 120px;
-    border-radius: 100%;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
-}
-
-#about_short-details__con__table {
-    background-color: var(--surface_color);
-    color: var(--on_surface_color);
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 7px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
-}
- 
-.about_short-details__con__table__row_th {
-    padding: 5px;
-    color: var(--headline_color);
-    text-align: right;
-}
-
-#about_long-details {
-    display: flex;
-    align-items: start;
     flex-wrap: wrap;
-    flex-basis: 65%;
+    justify-content: space-evenly;
 }
-
-.about_long-details__detail {
-    margin: 20px;
-    margin-right: 0;
+.about__detail {
+    margin: 20px 0;
     background-color: var(--surface_color);
     color: var(--on_surface_color);
     padding: 15px;
@@ -58,26 +17,32 @@ main {
     border-radius: 7px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
 }
+ 
+.about__detail__table__row_th {
+    padding: 5px 5px 5px 0;
+    color: var(--headline_color);
+    text-align: right;
+}
 
-.about_long-details__detail__header {
+.about__detail__header {
     color: var(--headline_color);
 }
-
-.about_long-details__detail__text {
+.about__detail__text {
     font-size: 16px;
+    padding-left: 10px;
 }
-.about_long-details__detail__text_divs{
+.about__detail__text_divs{
     display:flex;
     flex-wrap:wrap;
 }
-.about_long-details__detail__text_div{
+.about__detail__text_div{
     flex-basis:50%;
 }
-.about_long-details__detail__text__description {
+.about__detail__text__description {
     padding: 0 0 10px 15px;
 }
 
-.about_long-details__detail__header-underline {
+.about__detail__header-underline {
     height: 2px;
     width: 3vw;
     margin: 5px 0;
@@ -90,26 +55,20 @@ main {
     #about__main-content {
         /*  */
         flex-direction: column;
-    }
-
-    #about_long-details {
         align-items: center;
-        /*  */
-        flex-direction: column;
     }
 
-    .about_long-details__detail {
+    .about__detail {
         margin: 0;
         width: 80vw;
         /*  */
         margin-top: 20px;
     }
-
-    .about_long-details__detail__text {
+    .about__detail__text {
         font-size: 16px;
     }
 
-    .about_long-details__detail__header-underline {
+    .about__detail__header-underline {
         width: 10vw;
     }
 

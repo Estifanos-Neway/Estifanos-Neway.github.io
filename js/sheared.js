@@ -17,7 +17,7 @@ const FOOTER_PATH = "../html/footer.html";
 const LIGHT_THEME_PATH = "../css/light_theme.css";
 const DARK_THEME_PATH = "../css/dark_theme.css";
 const THEMES = { "light": LIGHT_THEME_PATH, "dark": DARK_THEME_PATH };
-const DEFAULT_THEME = "light";
+const DEFAULT_THEME = "dark";
 const DEFAULT_THEME_PATH = THEMES[DEFAULT_THEME];
 
 //* cookie related
@@ -63,8 +63,8 @@ function setTheme(theme_path) {
 }
 
 
-function changeTheme(event) {
-    currentTheme = currentTheme=="light"?"dark":"light";
+function changeTheme() {
+    currentTheme = currentTheme == "light" ? "dark" : "light";
     setTheme(THEMES[currentTheme]);
     document.cookie = "theme=" + currentTheme + ";expires=" + cookiesExpireAt + ";path=/";
 }
@@ -73,7 +73,7 @@ function decorHeader() {
     get(`header__navs__${PAGE_NAME}`).style.color = "var(--primary_color-on-surface)";
 }
 
-function setCopyrightDate(){
+function setCopyrightDate() {
     let now = new Date();
     get("footer__copyright__date").innerHTML = now.getFullYear();
 }
@@ -82,17 +82,17 @@ async function fillCommons() {
     //filling the header
     await fetch(HEADER_PATH)
         .then(res => res.text())
-        .then(text => get("header").innerHTML = text);
+        .then(text => head.innerHTML = text);
 
     //filling the footer
     await fetch(FOOTER_PATH)
         .then(res => res.text())
         .then(text => get("footer").innerHTML = text)
-        .catch(()=>{});
+        .catch(() => { });
 
     // setting properties of the header
     decorHeader();
-    get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
+    // get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
 
     // setting properties of the footer
     setCopyrightDate();
@@ -111,6 +111,12 @@ if (Object.keys(cookiesArray).length > 0 && cookiesArray["theme"] !== undefined)
 }
 setTheme(THEMES[currentTheme]);
 fillCommons();
+
+head.onclick = () => {
+    if (get("header__right-icons-con__change-theme-icon").onclick == null) {
+        get("header__right-icons-con__change-theme-icon").onclick = changeTheme;
+    }
+}
 
 //* setting event listeners
 window.onscroll = headMove;
