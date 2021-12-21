@@ -40,7 +40,7 @@ textarea {
     cursor: pointer;
 }
 .sep{
-    color: var(--primary_color);
+    color: var(--primary_color-on-surface);
     font-weight: bold;
 }
 /* common styles */

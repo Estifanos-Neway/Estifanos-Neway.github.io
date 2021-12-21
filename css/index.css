@@ -1,3 +1,95 @@
+/* 
+@keyframes changeLetter {
+    0% {
+      content: "Estifanos";
+    }
+    30% {
+      content: "Estifanos";
+    }
+    40% {
+      content: "Estifan";
+    }
+    45% {
+      content: "Estifa";
+    }
+    50% {
+      content: "Estif";
+    }
+    60% {
+      content: "Estiv";
+    }
+    70% {
+      content: "Stiv";
+    }
+    100% {
+      content: "Stiv";
+    }
+  } */
+
+  @keyframes name_changer {
+    0% {
+      content: "Estifanos";
+    }
+    35% {
+      content: "Estifanos";
+    }
+    36% {
+      content: "Estifano";
+    }
+    37% {
+      content: "Estifan";
+    }
+    38% {
+      content: "Estifa";
+    }
+    39% {
+      content: "Estif";
+    }
+    40% {
+      content: "Esti";
+    }
+    41% {
+      content: "Est";
+    }
+    42% {
+      content: "Es";
+    }
+    43% {
+      content: "E";
+    }
+    44% {
+      content: "";
+    }
+    61% {
+      content: "";
+    }
+    62% {
+      content: "S";
+    }
+    63% {
+      content: "St";
+    }
+    64% {
+      content: "Sti";
+    }
+    65% {
+      content: "Stiv";
+    }
+    100% {
+      content: "Stiv";
+    }
+  }
+  @keyframes blinker {
+      0%{
+          opacity: 1;
+      }
+      50%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+  }
 main {
     width: 100%;
     display: grid;
@@ -5,7 +97,6 @@ main {
     grid-template-rows: var(--header_height) auto;
     align-items: center;
 }
-
 #landing__photo {
     width: 300px;
     border-radius: 50px;
@@ -33,13 +124,21 @@ main {
     border-radius: 10px;
 }
 
-#landing__text-con_text-header {
+#landing__text-con__text-header {
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 5px;
 }
+#landing__text-con__text-header__name:after {
+    animation: name_changer 5s linear infinite alternate;
+    content: "Estifanos";
+  }
+  #landing__text-con__text-header__blink{
+      animation: blinker 0.8s linear infinite alternate;
+      border-bottom: 5px solid var(--primary_color);
+    }
 
-#landing__text-con_text-description {
+#landing__text-con__text-description {
     font-size: 30px;
     margin-bottom: 25px;
 }
@@ -90,12 +189,12 @@ main {
         margin-bottom: 5px;
     }
 
-    #landing__text-con_text-header {
+    #landing__text-con__text-header {
         font-size: 30px;
         /*  */
     }
 
-    #landing__text-con_text-description {
+    #landing__text-con__text-description {
         font-size: 25px;
         max-width: 450px;
         /*  */
