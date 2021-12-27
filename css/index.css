@@ -1,32 +1,5 @@
-/* 
-@keyframes changeLetter {
-    0% {
-      content: "Estifanos";
-    }
-    30% {
-      content: "Estifanos";
-    }
-    40% {
-      content: "Estifan";
-    }
-    45% {
-      content: "Estifa";
-    }
-    50% {
-      content: "Estif";
-    }
-    60% {
-      content: "Estiv";
-    }
-    70% {
-      content: "Stiv";
-    }
-    100% {
-      content: "Stiv";
-    }
-  } */
 
-  @keyframes name_changer {
+@keyframes name_changer {
     0% {
       content: "Estifanos";
     }
