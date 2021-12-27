@@ -17,7 +17,7 @@ const FOOTER_PATH = "../html/footer.html";
 const LIGHT_THEME_PATH = "../css/light_theme.css";
 const DARK_THEME_PATH = "../css/dark_theme.css";
 const THEMES = { "light": LIGHT_THEME_PATH, "dark": DARK_THEME_PATH };
-const DEFAULT_THEME = "dark";
+const DEFAULT_THEME = "light";
 const DEFAULT_THEME_PATH = THEMES[DEFAULT_THEME];
 
 //* cookie related
