@@ -134,7 +134,7 @@ footer {
 }
 
 #footer__header {
-    color: var(--on_surface_color);
+    color: var(--on_background_color);
     font-weight: normal;
     flex-basis: 33%;
     display: flex;
@@ -149,7 +149,7 @@ footer {
     align-items: center;
     width: 400px;
     justify-content: space-between;
-    color: var(--primary_color-on-surface);
+    color: var(--on_surface_color);
 }
 
 .footer__icon-con__a {

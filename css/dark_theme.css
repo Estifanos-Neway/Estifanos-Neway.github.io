@@ -11,4 +11,6 @@ html {
     --headline_color: var(--on_primary_color);
     --textarea_background_color: #cacaca;
     --comment_textarea_background_color: var(--textarea_background_color);
+    --on_background_icon_color:var(--on_surface_color);
+    --on_background_icon_svg_filter: invert(76%) sepia(7%) saturate(29%) hue-rotate(314deg) brightness(92%) contrast(98%);
 }
