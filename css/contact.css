@@ -6,9 +6,11 @@ main {
     display: flex;
     flex-direction: column;
 }
-
+#contact__header{
+    margin-bottom: 10px;
+}
 #contact__links-con {
-    width: 90vw;
+    width: 70vw;
     align-self: center;
     display: flex;
     justify-content: space-evenly;
@@ -22,7 +24,7 @@ main {
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
     align-items: center;
-    margin: 45px 10px;
+    margin: 15px 10px;
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
@@ -31,10 +33,12 @@ main {
 }
 .contact__links-con__link__icon, .contact__links-con__link__a__icon {
     color: var(--primary_color);
-    margin: 0 10px;
+    margin-right: 10px;
     font-size: x-large;
 }
-
+.contact__links-con__link__div{
+    margin-right: 10px;
+}
 .contact__links-con__link__text {
     font-size: large;
 }

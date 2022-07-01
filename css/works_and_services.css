@@ -23,7 +23,7 @@ main {
 }
 
 .works__main-con__work__image-con__image, .services__main-con__service__image-con__image {
-    height: 200px;
+    height: 250px;
     flex-basis: 40%;
 }
 
