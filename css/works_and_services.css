@@ -50,11 +50,13 @@ main {
     padding: 6px;
     font-size: 15px;
 }
-
+.works__main-con__work__text-con__visit-link{
+    color: var(--primary_color);
+}
 .works__main-con__work__text-con__comment-con__info {
     color: var(--headline_color);
     /* text-align: right; */
-    font-size: x-large;
+    font-size:medium;
     margin-bottom: 20px;
 }
 
@@ -80,18 +82,18 @@ main {
         padding: 0 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .works__main-con__work__text-con__header, .services__main-con__service__text-con__header {
         margin-bottom: 10px;
         /*  */
-        text-align: center;
+        /* text-align: center; */
     }
 
     .works__main-con__work__text-con__p, .services__main-con__service__text-con__p {
         /*  */
-        text-align: justify;
+        /* text-align: justify; */
     }
 
     .works__main-con__work__text-con__btn, .services__main-con__service__text-con__btn {

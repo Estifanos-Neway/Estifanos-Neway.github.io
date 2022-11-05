@@ -1,5 +1,5 @@
 @keyframes name_changer {
-  0% {
+  /* 0% {
     content: "Estifanos";
   }
 
@@ -37,6 +37,45 @@
 
   43% {
     content: "E";
+  } */
+  0% {
+    content: "A Developer";
+  }
+
+  35% {
+    content: "A Developer";
+  }
+
+  36% {
+    content: "A Develope";
+  }
+
+  37% {
+    content: "A Develop";
+  }
+
+  38% {
+    content: "A Develo";
+  }
+
+  39% {
+    content: "A Devel";
+  }
+
+  40% {
+    content: "A Deve";
+  }
+
+  41% {
+    content: "A Dev";
+  }
+
+  42% {
+    content: "A De";
+  }
+
+  43% {
+    content: "A D";
   }
 
   44% {
